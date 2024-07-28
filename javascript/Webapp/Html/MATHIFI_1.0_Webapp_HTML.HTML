@@ -70,6 +70,12 @@
             state.j3 = (getRandomInt(9,0));
             state.r2 = (getRandomInt(9,0));
             state.r3 = (getRandomInt(9,0));
+            state.l2 = (getRandomInt(9,0));
+            state.l3 = (getRandomInt(9,0));
+            state.p2 = (getRandomInt(9,0));
+            state.p3 = (getRandomInt(9,0));
+            state.n2 = (getRandomInt(9,0));
+            state.n3 = (getRandomInt(9,0));
 
 
             }
@@ -89,6 +95,13 @@
             state.j3 = (getRandomInt(9,0));
             state.r2 = (getRandomInt(9,0));
             state.r3 = (getRandomInt(9,0));
+            state.l2 = (getRandomInt(9,0));
+            state.l3 = (getRandomInt(9,0));
+            state.p2 = (getRandomInt(9,0));
+            state.p3 = (getRandomInt(9,0));
+            state.n2 = (getRandomInt(9,0));
+            state.n3 = (getRandomInt(9,0));
+
           
           
             }
@@ -105,6 +118,12 @@
             state.j3 = (getRandomInt(12,0));
             state.r2 = (getRandomInt(12,0));
             state.r3 = (getRandomInt(12,0));
+            state.l2 = (getRandomInt(12,0));
+            state.l3 = (getRandomInt(12,0));
+            state.p2 = (getRandomInt(12,0));
+            state.p3 = (getRandomInt(12,0));
+            state.n2 = (getRandomInt(12,0));
+            state.n3 = (getRandomInt(12,0));
 
             }
             }
@@ -124,7 +143,12 @@
             state.j3 = (getRandomInt(15,0));
             state.r2 = (getRandomInt(15,0));
             state.r3 = (getRandomInt(15,0));
-
+            state.l2 = (getRandomInt(15,0));
+            state.l3 = (getRandomInt(15,0));
+            state.p2 = (getRandomInt(15,0));
+            state.p3 = (getRandomInt(15,0));
+            state.n2 = (getRandomInt(15,0));
+            state.n3 = (getRandomInt(15,0));
             }
             else{
             if (state.op == 4){
@@ -141,6 +165,12 @@ state.j2 = (getRandomInt(100,0));
 state.j3 = (getRandomInt(100,0));
 state.r2 = (getRandomInt(100,0));
 state.r3 = (getRandomInt(100,0));
+state.l2 = (getRandomInt(100,0));
+state.l3 = (getRandomInt(100,0));
+state.p2 = (getRandomInt(100,0));
+state.p3 = (getRandomInt(100,0));
+state.n2 = (getRandomInt(100,0));
+state.n3 = (getRandomInt(100,0));
 }
     else{
             state.y2 = (getRandomInt(36,1));
@@ -155,6 +185,12 @@ state.r3 = (getRandomInt(100,0));
             state.j3 = (getRandomInt(36,1));
             state.r2 = (getRandomInt(36,1));
             state.r3 = (getRandomInt(36,1));
+            state.l2 = (getRandomInt(36,1));
+            state.l3 = (getRandomInt(36,1));
+            state.p2 = (getRandomInt(36,1));
+            state.p3 = (getRandomInt(36,1));
+            state.n2 = (getRandomInt(36,1));
+            state.n3 = (getRandomInt(36,1));
         }
     }
     }   
@@ -165,6 +201,9 @@ state.r3 = (getRandomInt(100,0));
             state.k4 = state.k2 * state.k3 
             state.j4 = state.j2 * state.j3 
             state.r4 = state.r2 * state.r3 
+            state.l4 = state.l2 * state.l3 
+            state.p4 = state.p2 * state.p3 
+            state.n4 = state.n2 * state.n3 
     }
         else{
             if (state.op == 3){
@@ -174,6 +213,9 @@ state.r3 = (getRandomInt(100,0));
             state.k4 = state.k2 * state.k3 
             state.j4 = state.j2 * state.j3 
             state.r4 = state.r2 * state.r3 
+            state.l4 = state.l2 * state.l3 
+            state.p4 = state.p2 * state.p3 
+            state.n4 = state.n2 * state.n3 
 
         }
         else{
@@ -183,26 +225,47 @@ state.r3 = (getRandomInt(100,0));
         state.k4 = state.k2 + state.k3 
         state.j4 = state.j2 + state.j3 
         state.r4 = state.r2 + state.r3 
+        state.l4 = state.l2 + state.l3 
+        state.p4 = state.p2 + state.p3 
+        state.n4 = state.n2 + state.n3 
         }
         }
         state.y2=String(state.y2);
         state.y3=String(state.y3);
         state.y4=String(state.y4);
+
         state.z2=String(state.z2);
         state.z3=String(state.z3);
         state.z4=String(state.z4);
+
         state.v2=String(state.v2);
         state.v3=String(state.v3);
         state.v4=String(state.v4);
+
         state.k2=String(state.k2);
         state.k3=String(state.k3);
         state.k4=String(state.k4);
+
         state.j2=String(state.j2);
         state.j3=String(state.j3);
         state.j4=String(state.j4);
+
         state.r2=String(state.r2);
         state.r3=String(state.r3);
         state.r4=String(state.r4);
+
+        state.l2=String(state.l2);
+        state.l3=String(state.l3);
+        state.l4=String(state.l4);
+
+        state.p2=String(state.p2);
+        state.p3=String(state.p3);
+        state.p4=String(state.p4);
+
+        state.n2=String(state.n2);
+        state.n3=String(state.n3);
+        state.n4=String(state.n4);
+
         if (state.op == 1){
         state.y5 = state.y4.concat(state.C.concat(state.y3))
         state.z5 = state.z4.concat(state.C.concat(state.z3))
@@ -210,6 +273,9 @@ state.r3 = (getRandomInt(100,0));
         state.k5 = state.k4.concat(state.C.concat(state.k3))
         state.j5 = state.j4.concat(state.C.concat(state.j3))
         state.r5 = state.r4.concat(state.C.concat(state.r3))
+        state.l5 = state.l4.concat(state.C.concat(state.l3))
+        state.p5 = state.p4.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
         }
         if (state.op == 2){
         state.y5 = state.y2.concat(state.C.concat(state.y3))
@@ -218,6 +284,9 @@ state.r3 = (getRandomInt(100,0));
         state.k5 = state.k2.concat(state.C.concat(state.k3))
         state.j5 = state.j2.concat(state.C.concat(state.j3))
         state.r5 = state.r2.concat(state.C.concat(state.r3))
+        state.l5 = state.l2.concat(state.C.concat(state.l3))
+        state.p5 = state.p2.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
         }
         if (state.op == 3){
         state.y5 = state.y2.concat(state.C.concat(state.y3))
@@ -226,6 +295,9 @@ state.r3 = (getRandomInt(100,0));
         state.k5 = state.k2.concat(state.C.concat(state.k3))
         state.j5 = state.j2.concat(state.C.concat(state.j3))
         state.r5 = state.r2.concat(state.C.concat(state.r3))
+        state.l5 = state.l2.concat(state.C.concat(state.l3))
+        state.p5 = state.p2.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
         }
         if (state.op == 4){
         state.y5 = state.y4.concat(state.C.concat(state.y3))
@@ -234,13 +306,19 @@ state.r3 = (getRandomInt(100,0));
         state.k5 = state.k4.concat(state.C.concat(state.k3))
         state.j5 = state.j4.concat(state.C.concat(state.j3))
         state.r5 = state.r4.concat(state.C.concat(state.r3))
-        }
+        state.l5 = state.l4.concat(state.C.concat(state.l3))
+        state.p5 = state.p4.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
+    }
         document.getElementById('myvar4_hint').innerText=state.y5;
         document.getElementById('myvar6_hint').innerText=state.z5;
         document.getElementById('myvar8_hint').innerText=state.v5;
         document.getElementById('myvar10_hint').innerText=state.k5;
         document.getElementById('myvar12_hint').innerText=state.j5;
         document.getElementById('myvar14_hint').innerText=state.r5;
+        document.getElementById('myvar16_hint').innerText=state.l5;
+        document.getElementById('myvar18_hint').innerText=state.p5;
+        document.getElementById('myvar20_hint').innerText=state.n5;
         document.getElementById('mydiv').hidden=false;
         document.getElementById('mydiv3').hidden=true;
     
@@ -261,6 +339,9 @@ state.r3 = (getRandomInt(100,0));
             document.getElementById('myvar10correct').innerText=state.k2;
             document.getElementById('myvar12correct').innerText=state.j2;
             document.getElementById('myvar14correct').innerText=state.r2;
+            document.getElementById('myvar16correct').innerText=state.l2;
+            document.getElementById('myvar18correct').innerText=state.p2;
+            document.getElementById('myvar20correct').innerText=state.n2;
             }
 
             if (state.op == 2){
@@ -270,6 +351,9 @@ state.r3 = (getRandomInt(100,0));
             document.getElementById('myvar10correct').innerText=state.k4;
             document.getElementById('myvar12correct').innerText=state.j4;
             document.getElementById('myvar14correct').innerText=state.r4;
+            document.getElementById('myvar16correct').innerText=state.l4;
+            document.getElementById('myvar18correct').innerText=state.p4;
+            document.getElementById('myvar20correct').innerText=state.n4;
             }
 
             if (state.op == 3){
@@ -279,6 +363,9 @@ state.r3 = (getRandomInt(100,0));
             document.getElementById('myvar10correct').innerText=state.k4;
             document.getElementById('myvar12correct').innerText=state.j4;
             document.getElementById('myvar14correct').innerText=state.r4;
+            document.getElementById('myvar16correct').innerText=state.l4;
+            document.getElementById('myvar18correct').innerText=state.p4;
+            document.getElementById('myvar20correct').innerText=state.n4;
             }
 
             if (state.op == 4){
@@ -288,6 +375,9 @@ state.r3 = (getRandomInt(100,0));
             document.getElementById('myvar10correct').innerText=state.k2;
             document.getElementById('myvar12correct').innerText=state.j2;
             document.getElementById('myvar14correct').innerText=state.r2;
+            document.getElementById('myvar16correct').innerText=state.l2;
+            document.getElementById('myvar18correct').innerText=state.p2;
+            document.getElementById('myvar20correct').innerText=state.n2;
             }
     
     
@@ -314,12 +404,69 @@ state.r3 = (getRandomInt(100,0));
             state.r=document.getElementById('myvar13').value;
             state.r=parseInt(state.r);
             document.getElementById('myvar14').innerText=state.r;
-    
+
+            state.l=document.getElementById('myvar15').value;
+            state.l=parseInt(state.l);
+            document.getElementById('myvar16').innerText=state.l;
+
+            state.p=document.getElementById('myvar17').value;
+            state.p=parseInt(state.p);
+            document.getElementById('myvar18').innerText=state.p;
+
+            state.n=document.getElementById('myvar19').value;
+            state.n=parseInt(state.n);
+            document.getElementById('myvar20').innerText=state.n;
+
+
+
+           
 
             state.x2 = 0;
             state.x = 0;
         if (state.op == 1){ 
             if (state.y == state.y2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.n == state.n2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.p == state.p2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.l == state.l2){
                 if (state.Hard_mode == 1){
              state.x ++;
              state.x ++;
@@ -419,6 +566,30 @@ state.r3 = (getRandomInt(100,0));
              state.x2 ++;
              }
              }
+
+             if (state.n == state.n4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.p == state.p4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
             
              if (state.j == state.j4){
              if (state.Hard_mode == 1){
@@ -497,6 +668,50 @@ state.r3 = (getRandomInt(100,0));
              state.x ++;
              state.x ++;
              state.x ++;        
+             state.x2 ++;
+             }
+             }
+
+             if (state.n == state.n4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;        
+             state.x2 ++;
+             }
+             }
+
+             if (state.p == state.p4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;        
+             state.x2 ++;
+             }
+             }
+
+             if (state.l == state.l4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
              state.x2 ++;
              }
              }
@@ -586,6 +801,60 @@ state.r3 = (getRandomInt(100,0));
 
            if (state.op == 4){
            if (state.y == state.y2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+
+             if (state.n == state.n2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+
+             if (state.p== state.p2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+
+             if (state.l == state.l2){
              if (state.Hard_mode == 1){
              state.x ++;
              state.x ++;
@@ -703,24 +972,32 @@ state.r3 = (getRandomInt(100,0));
             if(state.x > 30){
                 document.getElementById('message').innerText="pretty good!!";  
             }
+            
             else{
             if(state.x > 20){
                 document.getElementById('message').innerText="you have some potenial to be a math genius you just need to try harder";  
             }
             else{
-            if(state.x > 15){
+            if(state.x > 10){
                 document.getElementById('message').innerText="Ok score...";  
             }
             else{
             if(state.x > 5){
-                document.getElementById('message').innerText="Oof, maybe try an easier setting";  
+                document.getElementById('message').innerText="theres a good chance your score is this low beacuase you forgot you can get higher scores with harder settings";  
             }
     
             else{
             if(state.x > 0){
                 document.getElementById('message').innerText="Oof, maybe try an easier setting";  
             }
+            else{
+                if(state.x < 1){
+                document.getElementById('message').innerText="Mega Oof";  
             }
+        }
+    }
+            
+            
 
 
     
@@ -805,6 +1082,24 @@ state.r3 = (getRandomInt(100,0));
         <br>
         <B><span id="myvar14_hint"></span></B>
         <hr>
+        <B>Question 7</B>
+        <br>
+        <input id = "myvar15" type="text">
+        <br>
+        <B><span id="myvar16_hint"></span></B>
+        <hr>
+        <B>Question 8</B>
+        <br>
+        <input id = "myvar17" type="text">
+        <br>
+        <B><span id="myvar18_hint"></span></B>
+        <hr>
+        <B>Question 9</B>
+        <br>
+        <input id = "myvar19" type="text">
+        <br>
+        <B><span id="myvar20_hint"></span></B>
+        <hr>
         <div id="mydiv4">
         <button onclick="myfunction3()">submit</button>
         </div>
@@ -842,9 +1137,27 @@ state.r3 = (getRandomInt(100,0));
         <hr>
         <b>Question #6</b>
         <br>
-        <b>your answer:&nbsp;<span id = "myvar13"></span>&nbsp;
+        <b>your answer:&nbsp;<span id = "myvar14"></span>&nbsp;
         <b>
         correct answer:&nbsp;<span id = "myvar14correct"></span></b>
+        <hr>
+        <b>Question #7</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar16"></span>&nbsp;
+        <b>
+        correct answer:&nbsp;<span id = "myvar16correct"></span></b>
+        <hr>
+        <b>Question #8</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar18"></span>&nbsp;
+        <b>
+        correct answer:&nbsp;<span id = "myvar18correct"></span></b>
+        <hr>
+        <b>Question #9</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar20"></span>&nbsp;
+        <b>
+        correct answer:&nbsp;<span id = "myvar20correct"></span></b>
         <hr>
         <h2>Stats:</h2>
         <b>score (adjusted for difficulty settings): </b>
@@ -854,9 +1167,8 @@ state.r3 = (getRandomInt(100,0));
         <b>/9 (correct answer percentage)</b>
         <hr>
         <br>
-        <b>message</b>
-        <br>
-        <br>
+        <b>message (based on score catagory):   </b>
+
         <b><span id = "message"></span></b>
         </div>
         

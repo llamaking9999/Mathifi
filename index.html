@@ -1,0 +1,1217 @@
+<script>
+    //document.getElementById("myvar4_hint").innerText='this will genarate when you pick settings and click Genarate';
+    //document.getElementById("myvar6_hint").innerText='this will genarate when you pick settings and click Genarate';
+    //document.getElementById("Interactable").innerText=state.Interacty;
+            
+
+
+
+    let state = {};
+
+    function getRandomInt(max,difficult) {
+        let g = 0
+        if (difficult == 0) {
+            if (state.op == 3){
+                 g = Math.floor(Math.random() * max);
+                while (g < 2){
+                     g = Math.floor(Math.random() * max);
+                }
+                return g
+
+            } else {
+                return Math.floor(Math.random() * max);
+            }
+        }
+        if (difficult == 1) {
+             g = Math.floor(Math.random() * max);
+            if (state.op == 3){
+                while (g < 4) {
+                     g = Math.floor(Math.random() * max);
+            }
+            }
+            else{
+            while (g < 16) {
+                g = Math.floor(Math.random() * max);
+            }
+            }
+            return g
+
+        }
+    }
+    
+    
+    
+        function load(){
+        //state.Interacty = false
+        state.op=parseInt(document.getElementById('op').value);
+        state.Hard_mode=document.getElementById('Hard_mode').value;
+
+        if (state.op == 1){
+        state.C = "-";}
+        if (state.op == 2){
+        state.C = "+";}
+        if (state.op == 3){
+            state.C = " times ";}
+        if (state.op == 4){
+            state.C = " divided by "
+        }
+
+        if (state.Hard_mode == 0){
+            if (state.op == 3){
+            state.y2 = (getRandomInt(9,0));
+            state.z2 = (getRandomInt(9,0));
+            state.v2 = (getRandomInt(9,0));
+            state.k2 = (getRandomInt(9,0));
+            state.j2 = (getRandomInt(9,0));
+            state.y3 = (getRandomInt(9,0));
+            state.z3 = (getRandomInt(9,0));
+            state.v3 = (getRandomInt(9,0));
+            state.k3 = (getRandomInt(9,0));
+            state.j3 = (getRandomInt(9,0));
+            state.r2 = (getRandomInt(9,0));
+            state.r3 = (getRandomInt(9,0));
+            state.l2 = (getRandomInt(9,0));
+            state.l3 = (getRandomInt(9,0));
+            state.p2 = (getRandomInt(9,0));
+            state.p3 = (getRandomInt(9,0));
+            state.n2 = (getRandomInt(9,0));
+            state.n3 = (getRandomInt(9,0));
+
+
+            }
+            else{
+
+            if (state.op == 4){
+                //ggggg
+            state.y2 = (getRandomInt(9,0));
+            state.z2 = (getRandomInt(9,0));
+            state.v2 = (getRandomInt(9,0));
+            state.k2 = (getRandomInt(9,0));
+            state.y3 = (getRandomInt(9,0));
+            state.z3 = (getRandomInt(9,0));
+            state.v3 = (getRandomInt(9,0));
+            state.k3 = (getRandomInt(9,0));
+            state.j2 = (getRandomInt(9,0));
+            state.j3 = (getRandomInt(9,0));
+            state.r2 = (getRandomInt(9,0));
+            state.r3 = (getRandomInt(9,0));
+            state.l2 = (getRandomInt(9,0));
+            state.l3 = (getRandomInt(9,0));
+            state.p2 = (getRandomInt(9,0));
+            state.p3 = (getRandomInt(9,0));
+            state.n2 = (getRandomInt(9,0));
+            state.n3 = (getRandomInt(9,0));
+
+          
+          
+            }
+            else{
+            state.y2 = (getRandomInt(12,0));
+            state.z2 = (getRandomInt(12,0));
+            state.v2 = (getRandomInt(12,0));
+            state.k2 = (getRandomInt(12,0));
+            state.y3 = (getRandomInt(12,0));
+            state.z3 = (getRandomInt(12,0));
+            state.v3 = (getRandomInt(12,0));
+            state.k3 = (getRandomInt(12,0));
+            state.j2 = (getRandomInt(12,0));
+            state.j3 = (getRandomInt(12,0));
+            state.r2 = (getRandomInt(12,0));
+            state.r3 = (getRandomInt(12,0));
+            state.l2 = (getRandomInt(12,0));
+            state.l3 = (getRandomInt(12,0));
+            state.p2 = (getRandomInt(12,0));
+            state.p3 = (getRandomInt(12,0));
+            state.n2 = (getRandomInt(12,0));
+            state.n3 = (getRandomInt(12,0));
+
+            }
+            }
+            state.asdfasdf = 2
+        }
+        else{
+            if (state.op == 3){
+            state.y2 = (getRandomInt(15,0));
+            state.z2 = (getRandomInt(15,0));
+            state.v2 = (getRandomInt(15,0));
+            state.k2 = (getRandomInt(15,0));
+            state.y3 = (getRandomInt(15,0));
+            state.z3 = (getRandomInt(15,0));
+            state.v3 = (getRandomInt(15,0));
+            state.k3 = (getRandomInt(15,0));
+            state.j2 = (getRandomInt(15,0));
+            state.j3 = (getRandomInt(15,0));
+            state.r2 = (getRandomInt(15,0));
+            state.r3 = (getRandomInt(15,0));
+            state.l2 = (getRandomInt(15,0));
+            state.l3 = (getRandomInt(15,0));
+            state.p2 = (getRandomInt(15,0));
+            state.p3 = (getRandomInt(15,0));
+            state.n2 = (getRandomInt(15,0));
+            state.n3 = (getRandomInt(15,0));
+            }
+            else{
+            if (state.op == 4){
+
+state.y2 = (getRandomInt(100,0));
+state.z2 = (getRandomInt(100,0));
+state.v2 = (getRandomInt(100,0));
+state.k2 = (getRandomInt(100,0));
+state.y3 = (getRandomInt(100,0));
+state.z3 = (getRandomInt(100,0));
+state.v3 = (getRandomInt(100,0));
+state.k3 = (getRandomInt(100,0));
+state.j2 = (getRandomInt(100,0));
+state.j3 = (getRandomInt(100,0));
+state.r2 = (getRandomInt(100,0));
+state.r3 = (getRandomInt(100,0));
+state.l2 = (getRandomInt(100,0));
+state.l3 = (getRandomInt(100,0));
+state.p2 = (getRandomInt(100,0));
+state.p3 = (getRandomInt(100,0));
+state.n2 = (getRandomInt(100,0));
+state.n3 = (getRandomInt(100,0));
+}
+    else{
+            state.y2 = (getRandomInt(36,1));
+            state.z2 = (getRandomInt(36,1));
+            state.v2 = (getRandomInt(36,1));
+            state.k2 = (getRandomInt(36,1));
+            state.y3 = (getRandomInt(36,1));
+            state.z3 = (getRandomInt(36,1));
+            state.v3 = (getRandomInt(36,1));
+            state.k3 = (getRandomInt(36,1));
+            state.j2 = (getRandomInt(36,1));
+            state.j3 = (getRandomInt(36,1));
+            state.r2 = (getRandomInt(36,1));
+            state.r3 = (getRandomInt(36,1));
+            state.l2 = (getRandomInt(36,1));
+            state.l3 = (getRandomInt(36,1));
+            state.p2 = (getRandomInt(36,1));
+            state.p3 = (getRandomInt(36,1));
+            state.n2 = (getRandomInt(36,1));
+            state.n3 = (getRandomInt(36,1));
+        }
+    }
+    }   
+    if (state.op == 4 ){
+            state.y4 = state.y2 * state.y3
+            state.z4 = state.z2 * state.z3
+            state.v4 = state.v2 * state.v3 
+            state.k4 = state.k2 * state.k3 
+            state.j4 = state.j2 * state.j3 
+            state.r4 = state.r2 * state.r3 
+            state.l4 = state.l2 * state.l3 
+            state.p4 = state.p2 * state.p3 
+            state.n4 = state.n2 * state.n3 
+    }
+        else{
+            if (state.op == 3){
+            state.y4 = state.y2 * state.y3
+            state.z4 = state.z2 * state.z3
+            state.v4 = state.v2 * state.v3 
+            state.k4 = state.k2 * state.k3 
+            state.j4 = state.j2 * state.j3 
+            state.r4 = state.r2 * state.r3 
+            state.l4 = state.l2 * state.l3 
+            state.p4 = state.p2 * state.p3 
+            state.n4 = state.n2 * state.n3 
+
+        }
+        else{
+        state.y4 = state.y2 + state.y3
+        state.z4 = state.z2 + state.z3
+        state.v4 = state.v2 + state.v3 
+        state.k4 = state.k2 + state.k3 
+        state.j4 = state.j2 + state.j3 
+        state.r4 = state.r2 + state.r3 
+        state.l4 = state.l2 + state.l3 
+        state.p4 = state.p2 + state.p3 
+        state.n4 = state.n2 + state.n3 
+        }
+        }
+        state.y2=String(state.y2);
+        state.y3=String(state.y3);
+        state.y4=String(state.y4);
+
+        state.z2=String(state.z2);
+        state.z3=String(state.z3);
+        state.z4=String(state.z4);
+
+        state.v2=String(state.v2);
+        state.v3=String(state.v3);
+        state.v4=String(state.v4);
+
+        state.k2=String(state.k2);
+        state.k3=String(state.k3);
+        state.k4=String(state.k4);
+
+        state.j2=String(state.j2);
+        state.j3=String(state.j3);
+        state.j4=String(state.j4);
+
+        state.r2=String(state.r2);
+        state.r3=String(state.r3);
+        state.r4=String(state.r4);
+
+        state.l2=String(state.l2);
+        state.l3=String(state.l3);
+        state.l4=String(state.l4);
+
+        state.p2=String(state.p2);
+        state.p3=String(state.p3);
+        state.p4=String(state.p4);
+
+        state.n2=String(state.n2);
+        state.n3=String(state.n3);
+        state.n4=String(state.n4);
+
+        if (state.op == 1){
+        state.y5 = state.y4.concat(state.C.concat(state.y3))
+        state.z5 = state.z4.concat(state.C.concat(state.z3))
+        state.v5 = state.v4.concat(state.C.concat(state.v3))
+        state.k5 = state.k4.concat(state.C.concat(state.k3))
+        state.j5 = state.j4.concat(state.C.concat(state.j3))
+        state.r5 = state.r4.concat(state.C.concat(state.r3))
+        state.l5 = state.l4.concat(state.C.concat(state.l3))
+        state.p5 = state.p4.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
+        }
+        if (state.op == 2){
+        state.y5 = state.y2.concat(state.C.concat(state.y3))
+        state.z5 = state.z2.concat(state.C.concat(state.z3))
+        state.v5 = state.v2.concat(state.C.concat(state.v3))
+        state.k5 = state.k2.concat(state.C.concat(state.k3))
+        state.j5 = state.j2.concat(state.C.concat(state.j3))
+        state.r5 = state.r2.concat(state.C.concat(state.r3))
+        state.l5 = state.l2.concat(state.C.concat(state.l3))
+        state.p5 = state.p2.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
+        }
+        if (state.op == 3){
+        state.y5 = state.y2.concat(state.C.concat(state.y3))
+        state.z5 = state.z2.concat(state.C.concat(state.z3))
+        state.v5 = state.v2.concat(state.C.concat(state.v3))
+        state.k5 = state.k2.concat(state.C.concat(state.k3))
+        state.j5 = state.j2.concat(state.C.concat(state.j3))
+        state.r5 = state.r2.concat(state.C.concat(state.r3))
+        state.l5 = state.l2.concat(state.C.concat(state.l3))
+        state.p5 = state.p2.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
+        }
+        if (state.op == 4){
+        state.y5 = state.y4.concat(state.C.concat(state.y3))
+        state.z5 = state.z4.concat(state.C.concat(state.z3))
+        state.v5 = state.v4.concat(state.C.concat(state.v3))
+        state.k5 = state.k4.concat(state.C.concat(state.k3))
+        state.j5 = state.j4.concat(state.C.concat(state.j3))
+        state.r5 = state.r4.concat(state.C.concat(state.r3))
+        state.l5 = state.l4.concat(state.C.concat(state.l3))
+        state.p5 = state.p4.concat(state.C.concat(state.p3))
+        state.n5 = state.n4.concat(state.C.concat(state.n3))
+    }
+        document.getElementById('myvar4_hint').innerText=state.y5;
+        document.getElementById('myvar6_hint').innerText=state.z5;
+        document.getElementById('myvar8_hint').innerText=state.v5;
+        document.getElementById('myvar10_hint').innerText=state.k5;
+        document.getElementById('myvar12_hint').innerText=state.j5;
+        document.getElementById('myvar14_hint').innerText=state.r5;
+        document.getElementById('myvar16_hint').innerText=state.l5;
+        document.getElementById('myvar18_hint').innerText=state.p5;
+        document.getElementById('myvar20_hint').innerText=state.n5;
+        document.getElementById('mydiv').hidden=false;
+        document.getElementById('mydiv3').hidden=true;
+    
+    
+       }
+       //load()G
+       //document.onload=load;
+    
+       function myfunction3(){
+        
+        state.op=parseInt(document.getElementById('op').value);
+        state.Hard_mode=document.getElementById('Hard_mode').value;
+
+            if (state.op == 1){
+            document.getElementById('myvar4correct').innerText=state.y2;
+            document.getElementById('myvar6correct').innerText=state.z2;
+            document.getElementById('myvar8correct').innerText=state.v2;
+            document.getElementById('myvar10correct').innerText=state.k2;
+            document.getElementById('myvar12correct').innerText=state.j2;
+            document.getElementById('myvar14correct').innerText=state.r2;
+            document.getElementById('myvar16correct').innerText=state.l2;
+            document.getElementById('myvar18correct').innerText=state.p2;
+            document.getElementById('myvar20correct').innerText=state.n2;
+            }
+
+            if (state.op == 2){
+            document.getElementById('myvar4correct').innerText=state.y4;
+            document.getElementById('myvar6correct').innerText=state.z4;
+            document.getElementById('myvar8correct').innerText=state.v4;
+            document.getElementById('myvar10correct').innerText=state.k4;
+            document.getElementById('myvar12correct').innerText=state.j4;
+            document.getElementById('myvar14correct').innerText=state.r4;
+            document.getElementById('myvar16correct').innerText=state.l4;
+            document.getElementById('myvar18correct').innerText=state.p4;
+            document.getElementById('myvar20correct').innerText=state.n4;
+            }
+
+            if (state.op == 3){
+            document.getElementById('myvar4correct').innerText=state.y4;
+            document.getElementById('myvar6correct').innerText=state.z4;
+            document.getElementById('myvar8correct').innerText=state.v4;
+            document.getElementById('myvar10correct').innerText=state.k4;
+            document.getElementById('myvar12correct').innerText=state.j4;
+            document.getElementById('myvar14correct').innerText=state.r4;
+            document.getElementById('myvar16correct').innerText=state.l4;
+            document.getElementById('myvar18correct').innerText=state.p4;
+            document.getElementById('myvar20correct').innerText=state.n4;
+            }
+
+            if (state.op == 4){
+            document.getElementById('myvar4correct').innerText=state.y2;
+            document.getElementById('myvar6correct').innerText=state.z2;
+            document.getElementById('myvar8correct').innerText=state.v2;
+            document.getElementById('myvar10correct').innerText=state.k2;
+            document.getElementById('myvar12correct').innerText=state.j2;
+            document.getElementById('myvar14correct').innerText=state.r2;
+            document.getElementById('myvar16correct').innerText=state.l2;
+            document.getElementById('myvar18correct').innerText=state.p2;
+            document.getElementById('myvar20correct').innerText=state.n2;
+            }
+    
+    
+            state.y=document.getElementById('myvar3').value;
+            state.y=parseInt(state.y);
+            document.getElementById('myvar4').innerText=state.y;
+    
+            state.z=document.getElementById('myvar5').value;
+            state.z=parseInt(state.z);
+            document.getElementById('myvar6').innerText=state.z;
+
+            state.v=document.getElementById('myvar7').value;
+            state.v=parseInt(state.v);
+            document.getElementById('myvar8').innerText=state.v;
+
+            state.k=document.getElementById('myvar9').value;
+            state.k=parseInt(state.k);
+            document.getElementById('myvar10').innerText=state.k;
+
+            state.j=document.getElementById('myvar11').value;
+            state.j=parseInt(state.j);
+            document.getElementById('myvar12').innerText=state.j;
+
+            state.r=document.getElementById('myvar13').value;
+            state.r=parseInt(state.r);
+            document.getElementById('myvar14').innerText=state.r;
+
+            state.l=document.getElementById('myvar15').value;
+            state.l=parseInt(state.l);
+            document.getElementById('myvar16').innerText=state.l;
+
+            state.p=document.getElementById('myvar17').value;
+            state.p=parseInt(state.p);
+            document.getElementById('myvar18').innerText=state.p;
+
+            state.n=document.getElementById('myvar19').value;
+            state.n=parseInt(state.n);
+            document.getElementById('myvar20').innerText=state.n;
+
+
+
+           
+
+            state.x2 = 0;
+            state.x = 0;
+        if (state.op == 1){ 
+            if (state.y == state.y2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.n == state.n2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.p == state.p2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.l == state.l2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.j == state.j2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.r == state.r2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+            
+    
+            if (state.z == state.z2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.v == state.v2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+            
+            if (state.k == state.k2){
+                if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+            }
+        
+
+
+        if (state.op == 2){
+           if (state.y == state.y4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.n == state.n4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.p == state.p4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+            
+             if (state.j == state.j4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.r == state.r4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+    
+           if (state.z == state.z4){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+
+             if (state.v == state.v4){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.k == state.k4){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+           }
+
+
+
+           if (state.op == 3){
+           if (state.y == state.y4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;        
+             state.x2 ++;
+             }
+             }
+
+             if (state.n == state.n4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;        
+             state.x2 ++;
+             }
+             }
+
+             if (state.p == state.p4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;        
+             state.x2 ++;
+             }
+             }
+
+             if (state.l == state.l4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.r == state.r4){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;        
+             state.x2 ++;
+             }
+             }
+            
+             if (state.j == state.j4){
+             if (state.Hard_mode == 1){
+            state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+            state.x ++;
+             state.x ++;
+             state.x ++;  
+             state.x2 ++;
+             }
+             }
+    
+           if (state.z == state.z4){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             if (state.v == state.v4){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+
+             
+             if (state.k == state.k4){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             }
+           }
+
+
+           if (state.op == 4){
+           if (state.y == state.y2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+
+             if (state.n == state.n2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+
+             if (state.p== state.p2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+
+             if (state.l == state.l2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+
+             if (state.r == state.r2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+            
+             if (state.j == state.j2){
+             if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;   
+             state.x ++;      
+             state.x2 ++;
+             }
+             }
+    
+           if (state.z == state.z2){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++; 
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++; 
+             state.x2 ++;
+             }
+             }
+
+             if (state.v == state.v2){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++; 
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++; 
+             state.x2 ++;
+             }
+             }
+
+             if (state.k == state.k2){
+            if (state.Hard_mode == 1){
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++; 
+             state.x2 ++;
+             }
+             else {
+             state.x ++;
+             state.x ++;
+             state.x ++;
+             state.x ++; 
+             state.x2 ++;
+             }
+             }
+           }
+
+        
+        
+        if (state.x > 44){
+            document.getElementById('message').innerText="Amazing!!!";  
+        }
+        else{
+            if(state.x > 30){
+                document.getElementById('message').innerText="pretty good!!";  
+            }
+            
+            else{
+            if(state.x > 20){
+                document.getElementById('message').innerText="you have some potenial to be a math genius you just need to try harder";  
+            }
+            else{
+            if(state.x > 10){
+                document.getElementById('message').innerText="Ok score...";  
+            }
+            else{
+            if(state.x > 5){
+                document.getElementById('message').innerText="theres a good chance your score is this low beacuase you forgot you can get higher scores with harder settings";  
+            }
+    
+            else{
+            if(state.x > 0){
+                document.getElementById('message').innerText="Oof, maybe try an easier setting";  
+            }
+            else{
+                if(state.x < 1){
+                document.getElementById('message').innerText="Mega Oof";  
+            }
+        }
+    }
+            
+            
+
+
+    
+
+
+
+        }
+
+        
+
+
+
+
+
+
+        document.getElementById('myvar99').innerText=state.x;
+        document.getElementById('myvar999').innerText=state.x2;
+        document.getElementById('mydiv2').hidden=false;
+        document.getElementById('mydiv4').hidden=true;
+       }
+    }
+}
+      
+}
+    
+        </script>
+        <div id="mydiv3">
+        <select name="Operater" id="op">
+            <option value="">--Please choose an operater--</option>
+            <option value="1">Subtract</option>
+            <option value="2">Add</option>
+            <option value="3">Multiply</option>
+            <option value="4">Divide</option>
+          </select>
+        <br>
+        <br>
+        <select name="Hard_mode" id="Hard_mode">
+            <option value="">--Please choose an dificulty--</option>
+            <option value=1>hard mode</option>
+            <option value=0>easy mode</option>
+
+          </select>
+        <br>
+        <br>
+        <button onclick="load()">Genarate</button>
+        </div>
+        <div id="mydiv" hidden="true">
+        <hr>
+        <B>Question 1</B>
+        <br>
+        <input id = "myvar3" type="text">
+        <br>
+        <B><span id="myvar4_hint"></span></B>
+        <hr>
+        <B>Question 2</B>
+        <br>
+        <input id = "myvar5" type="text">
+        <br>
+        <B><span id="myvar6_hint"></span></B>
+        <hr>                        
+        <B>Question 3</B>
+        <br>
+        <input id = "myvar7" type="text">
+        <br>
+        <B><span id="myvar8_hint"></span></B>
+        <hr>
+        <B>Question 4</B>
+        <br>
+        <input id = "myvar9" type="text">
+        <br>
+        <B><span id="myvar10_hint"></span></B>
+        <hr>
+        <B>Question 5</B>
+        <br>
+        <input id = "myvar11" type="text">
+        <br>
+        <B><span id="myvar12_hint"></span></B>
+        <hr>
+        <B>Question 6</B>
+        <br>
+        <input id = "myvar13" type="text">
+        <br>
+        <B><span id="myvar14_hint"></span></B>
+        <hr>
+        <B>Question 7</B>
+        <br>
+        <input id = "myvar15" type="text">
+        <br>
+        <B><span id="myvar16_hint"></span></B>
+        <hr>
+        <B>Question 8</B>
+        <br>
+        <input id = "myvar17" type="text">
+        <br>
+        <B><span id="myvar18_hint"></span></B>
+        <hr>
+        <B>Question 9</B>
+        <br>
+        <input id = "myvar19" type="text">
+        <br>
+        <B><span id="myvar20_hint"></span></B>
+        <hr>
+        <div id="mydiv4">
+        <button onclick="myfunction3()">submit</button>
+        </div>
+        </div>
+        <div id="mydiv2" hidden="true">
+        <b>Question #1</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar4"></span>&nbsp;
+        <br>
+        correct answer:&nbsp;<span id = "myvar4correct"></span></b>
+        <hr>
+        <b>Question #2</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar6"></span>&nbsp;
+        <br>
+        correct answer:&nbsp;<span id = "myvar6correct"></span></b>
+        <hr>
+        <b>Question #3</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar8"></span>&nbsp;
+        <br>
+        correct answer:&nbsp;<span id = "myvar8correct"></span></b>
+        <hr>
+        <b>Question #4</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar10"></span>&nbsp;
+        <br>
+        correct answer:&nbsp;<span id = "myvar10correct"></span></b>
+        <hr>
+        <b>Question #5</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar12"></span>&nbsp;
+        <br>
+        correct answer:&nbsp;<span id = "myvar12correct"></span></b>
+        <hr>
+        <b>Question #6</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar14"></span>&nbsp;
+        <b>
+        correct answer:&nbsp;<span id = "myvar14correct"></span></b>
+        <hr>
+        <b>Question #7</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar16"></span>&nbsp;
+        <b>
+        correct answer:&nbsp;<span id = "myvar16correct"></span></b>
+        <hr>
+        <b>Question #8</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar18"></span>&nbsp;
+        <b>
+        correct answer:&nbsp;<span id = "myvar18correct"></span></b>
+        <hr>
+        <b>Question #9</b>
+        <br>
+        <b>your answer:&nbsp;<span id = "myvar20"></span>&nbsp;
+        <b>
+        correct answer:&nbsp;<span id = "myvar20correct"></span></b>
+        <hr>
+        <h2>Stats:</h2>
+        <b>score (adjusted for difficulty settings): </b>
+        <b><span id = "myvar99"></span></b>
+        <br>
+        <b><span id = "myvar999"></span></b>
+        <b>/9 (correct answer percentage)</b>
+        <hr>
+        <br>
+        <b>message (based on score catagory):   </b>
+
+        <b><span id = "message"></span></b>
+        </div>
+        
+        <style>
+            body {
+                background-color: rgb(38, 38, 38);
+                color: rgb(255, 255, 255);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+ 
+ 
+            hr {
+             border-color: greenyellow;
+            }
+ 
+ 
+            input{
+ 
+ 
+             background-color: rgb(91, 91, 91);
+             color: aqua;
+            }
+ 
+ 
+            button{
+             background-color: midnightblue;
+             color: mediumspringgreen;
+            }
+ 
+ 
+            select{
+             background-color: midnightblue;
+             color: mediumspringgreen;
+            }
+         </style>
+ 
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
